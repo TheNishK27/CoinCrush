@@ -1,0 +1,141 @@
+.home{
+    padding: 0px 10px;
+    padding-bottom: 100px;
+}
+
+.hero{
+    margin: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.hero h1{
+    max-width: 700px;
+    font-family: ss-ransom;
+    font-size: max(5vw,36px);
+    color: #e3e3e3;
+    line-height: 1.5;
+}
+
+.hero p{
+    max-width: 550px;
+    font-size:larger;
+    color: #c5c5c5;
+}
+
+.hero form{
+    max-width: 550px;
+    padding: 8px;
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero input{
+    flex: 1;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+
+.hero button {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    border: none;
+    background: #0b004e;
+    color: white;
+    font-size: 16px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.crypto-table{
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(rgba(84,3,255,0.15),rgba(105,2,153,0.15));
+    border-radius: 15px;
+}
+
+.market-cap{
+    text-align: right;
+}
+
+.table-layout{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+    padding: 15px 20px;
+    align-items: center;
+    border-bottom: 1px solid #3c3c3c;
+}
+
+.table-layout:last-child{
+    border: none;
+}
+
+.table-layout div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-layout div img{
+    width: 35px;
+}
+
+.table-layout .green{
+    color: #00D515;
+    text-align: center;
+}
+
+.table-layout .red{
+    color: #ff4646;
+    text-align: center;
+}
+
+@media(max-width: 768px){
+    .table-layout{
+        grid-template-columns: 0.5fr 3fr 1fr 1fr;
+    }
+    .market-cap{
+        display: none;
+    }
+}
+
+@media(max-width: 500px){
+    .table-layout div img{
+        width: 20px;
+    }
+    .table-layout{
+        font-size: 13px;
+    }
+    .hero form input{
+        width: 50px; 
+    }
+    .hero h1{
+        font-size: max(4vw,32px);
+    }
+    .hero p{
+        font-size:medium;
+    }
+    .hero form{
+        max-height: 40px;
+        min-width: 250px;
+    }
+    .hero button{
+        max-height: 30px;
+    }
+}
+
